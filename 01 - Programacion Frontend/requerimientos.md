@@ -22,9 +22,3 @@ De los anterior, determinamos los requerimeintos de cada entidad:
 ### DISEÑO
 * El cliente no tienen una idea clara acerca del diseño, pero hace refiere que tiene preferencia por el color azul marino y el color blanco, dejando libertad para la presentación de propuestas a criterio del desarrollador/diseñador.
 * En un enfoque general, se pueden realizar propuestas de una paleta de colores, fuentes e imágenes
-
-## Buyer persona
-Para este apartado, se presenta una propuesta con las características del usuario "ideal" como cliente de la empresa y como usuario de la plataforma.
-> NOTA: El buyer persona puede ser indistinto a su genero, es decir, hombre o mujer.
-
-![Abogabot-Poster-BuyerPersona](./images/buyerPersona.jpg)
