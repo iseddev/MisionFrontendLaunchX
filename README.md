@@ -1,6 +1,6 @@
-# Mision Frontend por Launch X
+# **Misión Frontend** por *Launch X*
 
-## Repositorio personal para el desarrollo y entrega de las prácticas programadas dentro del programa de formación en Desarrollo Web: **Misión Frontend** (por *Launch X*)
+## Repositorio personal para el desarrollo y entrega de las prácticas solicitadas dentro del programa de formación en Desarrollo Web: **Misión Frontend** (por *Launch X*)
 <br>
 
 ### **MÓDULO 1** - Programación Frontend
