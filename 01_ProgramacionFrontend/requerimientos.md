@@ -1,4 +1,4 @@
-# Programación Frontend - Práctica 1
+# Práctica 1 - Levantamiento de requerimientos
 
 - - -
 **Caso: Abogabot**
@@ -14,8 +14,6 @@ Descripción:
 - La página debe de ser responsive para poderla ver desde el celular.
 - La preferencia de colores del cliente es azul marino y blanco, pero acepta propuestas.
 - - -
-
-## Levantamiento de requerimientos
 
 ### Necesidades del cliente
 La empresa "Abogabot", que se desempeña como un despacho de abogados enfocados en la atención de diversas solicitudes de demandas por sus clientes, para lo que requiere poder gestionar el estado en el que se encuentran las demandas de sus clientes así como los procesos de pagos por parte de los propios clientes y poder así iniciar los procesos legales requeridos correspondientes, además de poder mantener informados a sus clientes en relación al avance de su proceso legal mediante correo electrónico.
