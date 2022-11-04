@@ -39,5 +39,5 @@ De los anterior, determinamos los requerimientos de cada entidad:
 * El administrador podrá cambiar el estado del proceso de cada demanda y también podrá agregar comentarios en cada actualización.
 
 ### DISEÑO
-* El cliente no tienen una idea clara acerca del diseño, pero hace refiere que tiene preferencia por el color azul marino y el color blanco, dejando libertad para la presentación de propuestas a criterio del desarrollador/diseñador.
+* El cliente no tienen una idea clara acerca del diseño, pero hace referencia a que tiene preferencia por el color azul marino y el color blanco, dejando libertad para la presentación de propuestas a criterio del desarrollador/diseñador.
 * En un enfoque general, se pueden realizar propuestas de una paleta de colores, fuentes e imágenes
