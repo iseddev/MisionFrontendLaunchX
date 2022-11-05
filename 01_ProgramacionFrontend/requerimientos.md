@@ -20,7 +20,7 @@ La empresa "Abogabot", que se desempeña como un despacho de abogados enfocados 
 
 De los anterior, determinamos los requerimientos de cada entidad:
 
-#### EMPRESA
+### EMPRESA
 * Contar con un sitio web para la gestión de demandas solicitadas por cada cliente.
 * Ofrecer diversos medios de pago para que el cliente pueda iniciar con su solicitud.
 * Solicta un sitio web "responsive" para que el sitio web sea accesible de forma correcta en diversos dispositivos electrónicos (smartphones, tablets, PC, etc)
