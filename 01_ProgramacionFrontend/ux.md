@@ -9,28 +9,37 @@ En esta práctica se lleva a cabo la creación de los wireframes referentes a lo
 [Wireframe versión Smartphone](images/wireframe_phone.jpg)
 
 ### Wireframes del formulario de solicitud de servicio
-*Pendiente*
-
+[Wireframe versión Desktop de la solicitud de servicio](images/wireframe_desktop_service.jpg) <br>
+[Wireframe versión Tablet de la solicitud de servicio](images/wireframe_tablet_service.jpg) <br>
+[Wireframe versión Smartphone de la solicitud de servicio](images/wireframe_phone_service.jpg)
 
 ### Wireframes del proceso de pago
-*Pendiente*
-
+[Wireframe versión Desktop del proceo de pago](images/wireframe_desktop_payment.jpg) <br>
+[Wireframe versión Tablet del proceo de pago](images/wireframe_tablet_payment.jpg) <br>
+[Wireframe versión Smartphone del proceo de pago](images/wireframe_phone_payment.jpg)
 
 ### Wireframes del formulario de registro
-*Pendiente*
+[Wireframe versión Desktop del registro de cliente](images/wireframe_desktop_signup.jpg) <br>
+[Wireframe versión Tablet del registro de cliente](images/wireframe_tablet_signup.jpg) <br>
+[Wireframe versión Smartphone del registro de cliente](images/wireframe_phone_signup.jpg)
 
-
-### Wireframe pantalla registro exitoso
-*Pendiente*
-
+*Para este apartado, se propone una mejora/actualización mediante la incorporación de registro con redes sociales u otras cuentas como "Gmail"*
 
 ### Wireframe pantalla inicio de sesión
-*Pendiente*
-
-
-### Wireframes del panel de control del administrador
-*Pendiente*
+[Wireframe versión Desktop del inicio de sesión de cliente](images/wireframe_desktop_signin.jpg) <br>
+[Wireframe versión Tablet del inicio de sesión de cliente](images/wireframe_tablet_signin.jpg) <br>
+[Wireframe versión Smartphone del inicio de sesión de cliente](images/wireframe_phone_signin.jpg)
 
 
 ### Wireframes del panel de control del cliente
-*Pendiente*
+[Wireframe versión Desktop del dashboard del cliente](images/wireframe_desktop_user_dashboard.jpg) <br>
+[Wireframe versión Tablet del dashboard del cliente](images/wireframe_tablet_user_dashboard.jpg) <br>
+[Wireframe versión Smartphone del dashboard del cliente](images/wireframe_phone_user_dashboard.jpg)
+
+
+### Wireframes del panel de control del administrador
+[Wireframe versión Desktop del dashboard del administrador](images/wireframe_desktop_admin_dashboard.jpg) <br>
+[Wireframe versión Tablet del dashboard del administrador](images/wireframe_tablet_admin_dashboard.jpg) <br>
+[Wireframe versión Smartphone del dashboard del administrador](images/wireframe_phone_admin_dashboard.jpg)
+
+**Cada una de estas prácticas puede mejorarse**
