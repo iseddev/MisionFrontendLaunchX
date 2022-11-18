@@ -1,6 +1,6 @@
 # Práctica 2 - Creación de sitio web para uso de **cliente**
 
-En esta práctica se realiza lo solicitado por los siguientes requerimientos
+En esta práctica se realiza lo solicitado en los siguientes requerimientos:
 
 * El cliente de la pastelería necesita ver los diferentes sabores de pasteles, así como los precios de cada uno.
 * El cliente de la pastelería necesita ver los diferentes adornos con los que se puede decorar el pastel y los precios de cada uno.
@@ -8,6 +8,10 @@ En esta práctica se realiza lo solicitado por los siguientes requerimientos
 * El cliente de la pastelería tendrá la posibilidad de combinar adornos dependiendo de sus preferencias.
 * El cliente de la pastelería necesita poner en un formulario su pedido.
 * El formulario debe de contener los datos de contacto del cliente que son Nombre, Teléfono, Correo electrónico, descripción general del pastel y la selección de sabores y adornos.
+* El pastelero necesita tener la información de la cantidad de sabores que le quedan para hacer los pasteles.
+* El pastelero necesita tener la información de la cantidad de adornos que le quedan para hacer los pasteles.
+* El pastelero necesita una tabla donde aparezcan los pedidos que se han realizado con los datos del formulario.
+* La página debe tener información de la pastelería que es Dirección, Teléfono y horarios de atención.
 
 ### Prácticas:
 
@@ -16,7 +20,7 @@ En esta práctica se realiza lo solicitado por los siguientes requerimientos
 * Maquetación de páginas del pastelero.
 
 ### Enlaces a los códigos de la maquetación de cada página web solicitada (sólo HTML)
-[Maquetación sitio web para uso de cliente](index.html)
+[Maquetación sitio web para uso de cliente](index.html)<br>
 [Maquetación sitio web para uso de pastelero](baker/index.html)
 
 ### Bonus: Se solicta realizar lo siguiente como un proceso extra:
