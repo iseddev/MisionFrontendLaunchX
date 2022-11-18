@@ -3,12 +3,11 @@
 ## Repositorio personal para el desarrollo y entrega de las prácticas solicitadas dentro del programa de formación en Desarrollo Web: **Misión Frontend** (por *Launch X*)
 <br>
 
-### **MÓDULO 1** - Programación Frontend --> - [Prácticas](/01_ProgramacionFrontend)
-<br>
+### **MÓDULO 1** - Programación Frontend
+[Prácticas](/01_ProgramacionFrontend)
 
 ### **MÓDULO 2** - HTML
-*Pendiente de actualizar*
-<br>
+[Prácticas](/02_HTML)
 
 ### **MÓDULO 3** - CSS
 *Pendiente de actualizar*
