@@ -19,9 +19,8 @@ Como pueden ver es una página de vacunación y en estos momentos que se está p
 * Bonus de diseños o páginas adicionales (Totalmente a tu creatividad)
 * Bonus de despliegue de la página
 
-### Contenido
-<br> 
-*IMPORTANTE: La práctica disponible está desarrollada para su visualización específicamente en dispositiovs desktop o mayores. Postriormente se realizará la actualización a las versiones "responsive".*
-<br><br>
+### Contenido<br> 
+
+*IMPORTANTE: La práctica disponible está desarrollada para su visualización específicamente en dispositiovs desktop o mayores. Postriormente se realizará la actualización a las versiones "responsive"*<br><br>
 
 [Archivos con la práctica de maquetado HTML y estilos con CSS](./practice/)
