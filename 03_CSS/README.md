@@ -14,10 +14,10 @@ Como pueden ver es una página de vacunación y en estos momentos que se está p
 * Maquetación del sitio con HTML
 * Estilos con CSS (Lo más acercado posible, pueden ser otras imágenes, íconos o colores, pero tiene que ser lo más cercano que puedas)
 
-### Bonus:
+<!-- ### Bonus:
 
 * Bonus de diseños o páginas adicionales (Totalmente a tu creatividad)
-* Bonus de despliegue de la página
+* Bonus de despliegue de la página -->
 
 ### Contenido<br> 
 
