@@ -1,0 +1,494 @@
+/* Importación de tipografía desde Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;700&family=Poppins:wght@500;600&display=swap');
+
+/* Estilos base */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+a { text-decoration: none; }
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+li { list-style: none; }
+
+:root {
+  /* Colores */
+  --main_color: #3858D6;
+  --second_color: #0F3068;
+  --third_color: #9099ad;
+  --yellow_color: #ffd012;
+  --light_color: #FFFFFF;
+  
+  --logo_color: var(--main_color);
+  --button_color: var(--main_color);
+  --blue_icon: var(--main-color);
+  --yellow_icon: var(--yellow-color);
+  
+  --title_color: var(--second_color);
+  --font_color: var(--third_color);
+
+  --grey_deco: #e8eeff;
+  --brands_color: #E7EBFC;
+
+  /* Tipografía */
+  --title_font: "Alexandria";
+  --title_size: 3.8rem;
+  --title_bold: 700;
+  --subtitle_size: 2.2rem;
+  --subtitle_bold: 400;
+  --subtitle-2_size: 1.1rem;
+  --subtitle-3_size: 1.3rem;
+
+  --header_height: 80px;
+  --logo_size: 1.5rem;
+  --menu_link_size: 1rem;
+  --font_xs: .86rem;
+  
+  --content_font: "Poppins";
+  --content_regular: 500;
+  --content_bold: 600;
+  --content-size: 1rem;
+
+  --spacing_content: .04rem;
+
+  --z_top: 1000;
+  --z_top-2: 900;
+}
+
+.logo-font, .title, .subtitle, .subtitle2, .subtitle3, .main-button, .second-button, .sub-text {
+  font-family: var(--title_font);
+  font-weight: var(--title_bold);
+}
+
+.nav-menu_link, .font-content, .footer-nav_menu-link, .footer-terms_privacy-link {
+  font-family: var(--content_font);
+  color: var(--font_color);
+}
+
+.logo-font {
+  color: var(--logo_color);
+  font-size: var(--logo_size);
+}
+
+.title, .subtitle, .subtitle2, .subtitle3 {
+  color: var(--title_color);
+}
+
+.title {
+  font-size: var(--title_size);
+}
+
+.subtitle {
+  font-size: var(--subtitle_size);
+}
+
+.subtitle2 {
+  font-size: var(--subtitle-2_size);
+}
+
+.subtitle3 {
+  font-size: var(--subtitle-3_size);
+}
+
+.font-content {
+  font-weight: var(--content_regular);
+  font-size: var(--content-size);
+  letter-spacing: var(--spacing_content);
+}
+
+.sub-text { font-size: 1.2rem; }
+
+.button {
+  display: inline-block;
+  padding: .9rem 2.6rem;
+  border-radius: .3rem;
+  font-size: 1.1rem;
+  font-weight: var(--content_regular);
+  box-shadow: 3px 3px 15px -10px rgba(0 0 0 / 0.9);
+}
+
+.main-button {
+  color: var(--light_color);
+  background-color: var(--main_color);
+}
+
+.second-button {
+  color: var(--second_color);
+  background-color: var(--grey_deco);
+}
+
+.icon-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-xs, .icon-sm, .icon-md { display: inline-block; }
+
+.icon-xs {
+  padding: .2rem;
+  width: 18px;
+  height: 18px;
+  border-radius: .15rem;
+}
+
+.icon-sm {
+  padding: .3rem;
+  width: 24px;
+  height: 24px;
+  border-radius: .15rem;
+}
+
+.icon-md {
+  padding: .6rem;
+  width: 48px;
+  height: 48px;
+  border-radius: .4rem;
+}
+
+.icon-yellow {
+  color: var(--yellow_color);
+  background-color: rgba(255 208 18 / .1);
+}
+
+.icon-blue {
+  color: var(--main_color);
+  background-color: rgba(101 115 141 / 0.1);
+}
+
+.header {
+  position: fixed;
+  z-index: var(--z_top);
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: var(--header_height);
+  display: flex;
+  align-items: center;
+  background-color: var(--light_color);
+}
+
+.nav-container {
+  height: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ========== Clases generales ========== */
+.body { background-color: #fcfcfc;}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.flex { display: flex; flex-wrap: wrap; }
+.flex-column { flex-direction: column; }
+.flex-end { justify-content: flex-end;}
+.flex-x-start { justify-content: flex-start; }
+.flex-x-end { justify-content: flex-end; }
+.flex-x-between { justify-content: space-between; }
+.flex-y-center { align-items: center; }
+/* ========== Fin Clases generales ========== */
+
+.nav-logo {
+  width: 20%;
+}
+
+.nav-menu{ 
+  width: 60%;
+}
+
+.nav-menu_link {
+  display: block;
+  font-weight: var(--content_bold);
+  font-size: var(--menu_link_size);
+  padding: 1rem;
+  margin: 0 .2rem;
+}
+
+.nav-button {
+  width: 20%;
+}
+
+.main-content {
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  position: relative;
+}
+
+.main-content_bg {
+  position: absolute;
+  z-index: -1;
+  width: 50vw;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-image: url("../images/vaccination-img01.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-details {
+  width: 100%;
+  padding-top: calc(var(--header_height) + 3rem);
+  justify-content: flex-start;
+}
+
+.main-details_content {
+  width: 40%;
+}
+
+.main-details_title { padding-bottom: 1.4rem; }
+
+.main-details_description { padding-bottom: 2.2rem; }
+
+.main-details_adv-description {
+  margin-left: .6rem;
+  color: var(--second_color);
+  font-size: var(--font_xs);
+  font-weight: 600;
+}
+
+.icon-star { margin-left: 2rem; }
+
+.main-schedule_details {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  position: absolute;
+  bottom: 2rem;
+}
+
+.schedule-details_intro { margin-bottom: 1.6rem; }
+
+.schedule-details_intro-title {
+  color:var(--second_color);
+  font-size: var(--subtitle-2_size);
+  font-weight: 500;
+  margin-left: .6rem;
+}
+
+.schedule-info {
+  width: 75%;
+  background-color: var(--light_color);
+  border-radius: .4rem;
+  box-shadow: 3px 3px 15px -10px rgba(0 0 0 / 0.9);
+  padding: 1.6rem;
+}
+
+.schedule-info_data {
+  width: 25%;
+  text-align: center;
+}
+
+.schedule-info_data-header { margin-bottom: 1rem; }
+
+.schedule-info_data-title {
+  margin-left: .6rem;
+  font-weight: var(--title_bold);
+}
+
+.schedule-info_data-info, .footer-nav_title {
+  font-family: var(--title_font);
+  font-weight: 500;
+  font-size: var(--subtitle-3_size);
+  color: var(--second_color);
+}
+
+.pharma-logos {
+  width: 100%;
+  padding: 5rem 0;
+}
+
+.pharma-logo {
+  width: 25%;
+  max-width: 16rem;
+  padding: 0 2rem;
+}
+
+.why, .preparations, .contact {padding: 4rem 0; }
+
+.why-content {
+  width: 50%;
+  margin-bottom: 5rem;
+}
+
+.why-content_title, .preparations-content_title, .contact-content_title {
+  margin-bottom: 1.8rem;
+}
+
+.why-benefits_card {
+  width: 23%;
+  padding: 2rem;
+  padding-bottom: 4rem;
+  box-shadow: 3px 3px 15px -10px rgba(0 0 0 / 0.9);
+  border-radius: .4rem;
+}
+
+.benefits-card_icon, .benefits-card_title { margin-bottom: 1.2rem; }
+
+.benefits-card_title { font-weight: 500;}
+
+.benefits-card_info {
+  letter-spacing: .02rem;
+  font-size: var(--font_xs);
+}
+
+.preparations {
+  position: relative;
+  width: 100%;
+}
+
+.preparations-bg {
+  position: absolute;
+  width: 44%;
+  min-height: 600px;
+  background-image: url("../images/vaccination-img02.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateY(100px);
+}
+
+.preparations-container {
+  width: 50%;
+  min-height: 700px;
+}
+
+.preparations-content {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.preparations-tips_drop {
+  padding: 1.2rem 2.2rem;
+  box-shadow: 3px 3px 10px -10px rgba(0 0 0 / 0.9);
+}
+
+.preparations-tips_drop::marker { content: ""; }
+
+.preparations-tips_title {
+  color: var(--second_color);
+  margin-left: .4rem;
+}
+
+.preparations-tips_info {
+  font-size: var(--font_xs);
+  padding: 1rem 2.6rem;
+}
+
+.icon-dropdown { cursor: pointer; }
+
+.contact {
+  position: relative;
+  width: 100%;
+}
+
+.contact-container {
+  width: 50%;
+}
+
+.contact-cards {
+  padding: 3rem 0;
+}
+
+.contact-card {
+  width: 45%;
+  padding: 2rem 1.6rem;
+  box-shadow: 3px 3px 15px -10px rgba(0 0 0 / 0.9);
+  border-radius: .4rem;
+  margin-bottom: 2rem;
+}
+
+.contact-card_header {
+  width: 100%;
+  margin-bottom: 1.6rem;
+}
+.contact-card_header-info { margin-left: 1rem; }
+.contact-card_header-title {
+  font-size: var(--subtitle-2_size);
+  color: var(--second_color);
+}
+
+.contact-card_header-text { font-size: var(--font_xs); }
+.contact-card_button {
+  text-align: center;
+}
+
+.contact-card_button-cta {
+  width: 100%;
+  max-width: 300px;
+  transition: color .2s ease-in, background-color .3s ease-in-out;
+}
+
+.contact-card_button-cta:hover {
+  color: var(--light_color);
+  background-color: var(--main_color);
+}
+
+.contact-bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 44%;
+  min-height: 600px;
+  background-image: url("../images/vaccination-img03.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateY(-4rem)
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: var(--grey_deco);
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.footer-nav_logo { margin-bottom: 1rem; }
+
+.footer-quarter { width: 50%; }
+
+.footer-nav_col-3 { width: 33.33% }
+
+.footer-intro, .footer-nav { width: 50%; }
+
+.footer-nav_title, .footer-nav_menu-link { display: inline-block; }
+
+.footer-nav { padding-bottom: 5rem; }
+
+.footer-nav_title { padding-bottom: 1rem; }
+
+.footer-nav_menu-item { margin-bottom: .4rem; }
+
+.footer-nav_menu-item:last-child { margin-bottom: 0; }
+
+.footer-nav_menu-link, .footer-terms_copy-text, .footer-terms_privacy-link { font-size: var(--font_xs); }
+
+.footer-nav_menu-link { padding: .5rem 0; }
+
+.footer-terms_privacy-item { display: inline; }
+
+.footer-terms_privacy-item:last-child { margin-left: 1rem; }
