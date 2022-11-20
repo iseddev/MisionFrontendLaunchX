@@ -10,8 +10,7 @@
 [Prácticas](/02_HTML)
 
 ### **MÓDULO 3** - CSS
-*Pendiente de actualizar*
-<br>
+[Prácticas](/03_CSS)
 
 ### **MÓDULO 4** - JavaScript
 *Pendiente de actualizar*
