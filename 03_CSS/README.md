@@ -25,4 +25,6 @@ Como pueden ver es una página de vacunación y en estos momentos que se está p
 
 [Archivos con la práctica de maquetado HTML y estilos con CSS](./practice/)
 
+Imagen captura de pantalla práctica desplegada en servidor local:
+
 ![Imagen captura de pantalla práctica desplegada en servidor local](03_CSS_practice_.png)
