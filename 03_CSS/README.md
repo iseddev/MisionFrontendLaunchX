@@ -19,5 +19,8 @@ Como pueden ver es una página de vacunación y en estos momentos que se está p
 * Bonus de diseños o páginas adicionales (Totalmente a tu creatividad)
 * Bonus de despliegue de la página
 
+### Contenido
+[Archivos con la práctica de maquetado HTML y estilos con CSS](./practice/)
+
 <!-- 1. [Crear marca de la pastelería como un logo y los mensajes que daremos desde la marca](branding.md) -->
 <!-- 2. [Maquetación sitio web para uso de cliente y pastelero](website/website.md) -->
