@@ -20,7 +20,7 @@ Como pueden ver es una página de vacunación y en estos momentos que se está p
 * Bonus de despliegue de la página
 
 ### Contenido
+<br> 
+*IMPORTANTE: La práctica disponible está desarrollada para su visualización específicamente en dispositiovs desktop o mayores. Postriormente se realizará la actualización a las versiones "responsive".*
+<br><br> 
 [Archivos con la práctica de maquetado HTML y estilos con CSS](./practice/)
-
-<!-- 1. [Crear marca de la pastelería como un logo y los mensajes que daremos desde la marca](branding.md) -->
-<!-- 2. [Maquetación sitio web para uso de cliente y pastelero](website/website.md) -->
