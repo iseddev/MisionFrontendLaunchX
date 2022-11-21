@@ -26,4 +26,7 @@
 
 [Archivos con la práctica de maquetado HTML, estilos CSS y JavaScript](./mokepon/)
 
+#### Captura pantalla del proyecto ejecutado en servidor local
+![Captura pantalla Pokedex prática JS](mokepon_.png)
+
 *La actualización de la práctica para completar los requerimientos bonus, en breve serán actualizados...*
