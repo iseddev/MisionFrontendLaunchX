@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokeApp - Práctica Módulo 4-JS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body">
+  <div class="container">
+    <div class="poke-header">
+      <h1 class="title">Search PokeApp</h1>
+    </div>
+    <div class="poke-container flex flex-y-center">
+      <div class="poke-data_search flex flex-column">
+        <div class="poke-frame flex flex-x-center flex-y-center">
+          <div class="poke-frame_image flex flex-x-center flex-y-center">
+            <img src="./images/poke-ball.png" alt="Pokemon photo" id="poke-photo" class="poke-frame_image-photo">
+            <span id="error" class="error"></span>
+          </div>
+          <div class="poke-frame_name flex flex-x-between flex-y-bottom">
+            <span class="poke-frame_name-before" id="poke-before-name"> </span>
+            <span class="poke-frame_name-info" id="poke-name"> </span>
+            <span class="poke-frame_name-after" id="poke-after-name"> </span>
+          </div>
+        </div>
+        <div class="poke-search">
+          <div class="poke-search_container flex flex-column">
+            <input type="text" placeholder="Type a name or number Pokemon" id="poke-name-input" name="poke_name" autofocus class="search-input">
+            <button id="search-btn" class="search-btn">Search Pokemon</button>
+          </div>
+        </div>
+      </div>
+      <div class="poke-data_results">
+        <div class="poke-data_api flex">
+          <div class="poke-data_info">
+            <h3 class="poke-data_title">Type: </h3>
+            <div class="poke-data_info-api">
+              <ul id="poke-types"></ul>
+            </div>
+          </div>
+          <div class="poke-data_info">
+            <h3 class="poke-data_title">Stats: </h3>
+            <div class="poke-data_info-api">
+              <ul id="poke-stats"></ul>
+            </div>
+          </div>
+          <div class="poke-data_info">
+            <h3 class="poke-data_title">Moves:</h3>
+            <div class="poke-data_info-api">
+              <ul id="poke-moves"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="index.js"></script>
+</body>
+</html>

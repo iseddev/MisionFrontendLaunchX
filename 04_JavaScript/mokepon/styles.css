@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;600&family=Passion+One&display=swap');
+
+/* Estilos base */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+a { text-decoration: none; }
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+li { list-style: none; }
+
+.title {
+  font-size: 2rem;
+}
+
+:root {
+  --main-font: "Passion One";
+  --second-font: "Chakra Petch";
+
+  --font-xs: 1rem;
+  --font-sm: 1.4rem;
+  --font-md: 2rem;
+  --font-lg: 3rem;
+  --font-xl: 5rem;
+
+  --poke-yellow: #FFDE00;
+  --poke-blue: #3B4CCA;
+  --poke-red: #CC0000;
+}
+
+/* Clases de layout */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-column { flex-direction: column; }
+.flex-x-center { justify-content: center; }
+.flex-y-center { align-items: center; }
+.flex-x-between { justify-content: space-between; }
+.flex-y-bottom { align-items: flex-end; }
+
+.title {
+  font-family: var(--main-font);
+  font-size: var(--font-xl);
+  color: var(--poke-yellow);
+  -webkit-text-stroke: 1px var(--poke-blue);
+  text-align: center;
+}
+
+.text-content {
+  font-family: var(--second-font);
+  font-size: var(--font-sm);
+  font-weight: 300;
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: rgb(195, 221, 255);
+  font-family: var(--second-font);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto;
+}
+
+.poke-header {
+  padding: 3rem 0 ;
+}
+
+.poke-container {
+  position: relative;
+  width: 100%;
+}
+
+.poke-data_search {
+  width: 35%;
+  height: 100%;
+  position: sticky;
+  top: 2rem;
+}
+
+.poke-data_results { width: 65%; }
+
+
+/* Estilos para las imágenes */
+.poke-frame {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.poke-frame_image {
+  width: 15rem;
+  height: 15rem;
+  position: sticky;
+  top: 2rem;
+}
+
+.poke-frame_image-photo {
+  position: relative;
+  width: 100%;
+}
+
+.poke-frame_name {
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  background: #FFFFFF;
+  border-radius: 1rem 1rem 0 0;
+  color: var(--poke-blue);
+  z-index: -1;
+  font-family: var(--second-font);
+  box-shadow: 3px 3px 20px -6px rgba(0 0 0 / 0.9);
+}
+
+.poke-frame_name-before {
+  width: 33.33%;
+  font-weight: 600;
+  color: var(--poke-red)
+}
+
+.poke-frame_name-info {
+  display: block;
+  position: relative;
+  font-size: var(--font-md);
+  font-family: var(--main-font);
+  width: 33.33%;
+}
+
+.poke-frame_name-after {
+  width: 33.33%;
+  font-weight: 600;
+  color: var(--poke-red)
+}
+
+.error {
+  position: absolute;
+  bottom: 1rem;
+  font-weight: 600;
+}
+
+.poke-search_container {
+  padding: 2rem 0;
+}
+
+.search-input {
+  border: none;
+  padding: 1.2rem;
+  margin-bottom: 1.6rem;
+  border-radius: .4rem;
+  font-family: var(--second-font);
+  font-size: var(--font-sm);
+  color: var(--poke-blue);
+  font-weight: 600;
+  text-align: center;
+}
+
+.search-btn {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  background-color: var(--poke-blue);
+  color: #FFFFFF;
+  font-family: var(--main-font);
+  font-size: var(--font-md);
+  border-radius: .4rem;
+  box-shadow: 3px 3px 20px -6px rgba(0 0 0 / 0.9);
+  cursor: pointer;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.poke-data_api {
+  width: 100%;
+  padding: 0 4rem;
+}
+
+.poke-data_info {
+  width: inherit;
+  margin-bottom: 1rem;
+}
+
+.poke-data_info-api {
+  width: 100%;
+  height: 6rem;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: .6rem 1rem;
+  border: 2px solid var(--poke-blue);
+}
+
+.poke-data_title {
+  font-size: var(--font-md);
+  color: var(--poke-blue);
+  font-family: var(--main-font);
+  font-weight: 100;
+  margin-bottom: .6rem;
+}
+
+.poke-data_details {
+  font-size: var(--font-sm);
+  text-transform: capitalize;
+}
