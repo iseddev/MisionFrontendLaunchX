@@ -13,8 +13,7 @@
 [Prácticas](/03_CSS)
 
 ### **MÓDULO 4** - JavaScript
-*Pendiente de actualizar*
-<br>
+[Prácticas](/04_JavaScript)
 
 ### **MÓDULO 5** - Vue JS
 *Pendiente de actualizar*
