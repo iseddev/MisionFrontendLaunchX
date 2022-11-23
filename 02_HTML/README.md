@@ -9,4 +9,4 @@ Prácticas correspondientes al módulo  2 **HTML** de la formación *"Misión Fr
 
 **B O N U S**
 
-1. Aplicación de estilos a la maquetación del sitio web (actualizando...)
+3. Aplicación de estilos a la maquetación del sitio web (actualizando...)
