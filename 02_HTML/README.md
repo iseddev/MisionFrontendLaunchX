@@ -6,8 +6,7 @@ Prácticas correspondientes al módulo  2 **HTML** de la formación *"Misión Fr
 
 1. [Crear marca de la pastelería como un logo y los mensajes que daremos desde la marca](branding.md)
 2. [Maquetación sitio web para uso de cliente y pastelero](website/website.md)
-<<<<<<< HEAD
 
 **B O N U S**
 
-3. Aplicación de estilos a la maquetación del sitio web (actualizando...)
+1. Aplicación de estilos a la maquetación del sitio web (actualizando...)
