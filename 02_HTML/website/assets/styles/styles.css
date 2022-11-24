@@ -29,13 +29,14 @@ li { list-style: none; }
 
   --font-xl: 5rem;
   --font-lg: 4rem;
-  --font-md: 2.8rem;
-  --font-sm: 1.8rem;
+  --font-md: 2.2rem;
+  --font-sm: 1.6rem;
+  --font-xs: 1.2rem;
 
   --main-color: #ff1616;
-  --second-color: #0770B3;
+  --second-color: #0770b3;
   --third-color: #B32222;
-  --fourth-color: #30AFFF;
+  --fourth-color: #30afff;
   --dark-color: #000000;
   --dark-grey: #252525;
   --light-grey: #cecece;
@@ -45,6 +46,7 @@ li { list-style: none; }
   --z-max: 10000;
 }
 
+/* General Styles */
 .body {
   width: 100%;
   min-height: 100vh;
@@ -53,6 +55,51 @@ li { list-style: none; }
   overflow-x: hidden;
   font-family: var(--main-font);
 }
+
+.section {
+  display: block;
+  position: relative;
+  padding-top: 6rem;
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: var(--lobster-font);
+  font-size: var(--font-lg);
+  color: var(--main-color);
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.btn {
+  padding: .8rem 1.8rem;
+  display: inline-block;
+  border-radius: 2rem;
+  font-size: var(--font-xs);
+  text-transform: uppercase;
+  letter-spacing: .08rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.main-btn {
+  color: var(--white-color);
+  background-color: var(--main-color);
+  font-weight: 600;
+  border: 1px solid var(--main-color);
+  transition: color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+.main-btn:hover {
+  background-color: var(--white-color);
+  color: var(--main-color);
+}
+/* END General Styles */
+
 
 /* ########## LAYOUT styles ########## */
 .flex-container {
@@ -74,6 +121,7 @@ li { list-style: none; }
 }
 /* ########## END LAYOUT styles ########## */
 
+
 /* ########## Hero background styles ########## */
 .hero-bg {
   display: block;
@@ -92,7 +140,7 @@ li { list-style: none; }
   position: absolute;
   width: inherit;
   height: inherit;
-  background: linear-gradient(135deg, rgba(255 22 22 / .4) 20%,rgba(0,0,0,.4) 70%);
+  background: linear-gradient(135deg, rgba(7 112 179 / .2) 20%,rgba(48 175 255 / .2) 70%);
   z-index: 0;
 }
 /* ########## ENDHero background styles ########## */
@@ -102,8 +150,9 @@ li { list-style: none; }
   width: 100%;
   height: 90px;
   position: fixed;
-  background-color: rgba(37 37 37 / .8);
+  background-color: rgba(255 255 255 / .86);
   z-index: var(--z-max);
+  box-shadow: 0 1px 3px rgba(37 37 37 / .1);
 }
 
 .nav-header {
@@ -118,7 +167,7 @@ li { list-style: none; }
   width: inherit;
   font-family: var(--lobster-font);
   color: var(--main-color);
-  font-size: var(--font-md);
+  font-size: var(--font-sm);
 }
 /* ########## END HEADER common styles ########## */
 
@@ -133,7 +182,10 @@ li { list-style: none; }
 .main-content {
   width: 60%;
   text-align: right;
-  padding-right: 3rem;
+  margin-right: 3rem;
+  padding: 2.6rem 4rem;
+  background-color: rgba(7 112 179 / .8);
+  border-radius: .8rem;
 }
 
 .main-content_text {
@@ -151,3 +203,76 @@ li { list-style: none; }
   color: var(--yellow-color);
 }
 /* ########## END MAIN common styles ########## */
+
+
+/* Prodcuts Section */
+.card-item {
+  width: 33.33%;
+  height: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  width: 100%;
+  border-radius: .6rem;
+  box-shadow: 0 2px 5px rgba(37 37 37 / .2);
+}
+
+.card-image_container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  border-top-left-radius: .6rem;
+  border-top-right-radius: .6rem;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+}
+
+.card-content_container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 1.2rem 2rem;
+}
+
+.card-content_title {
+  font-size: var(--font-md);
+  color: var(--dark-grey);
+  line-height: .8;
+  padding-bottom: 1rem;
+  font-weight: 400;
+}
+
+.card-content_info {
+  font-size: var(--font-xs);
+  color: var(--main-color);
+  font-family: var(--lobster-font);
+}
+
+.cake-info {
+  font-family: var(--main-font);
+  font-size: var(--font-sm);
+  color: var(--dark-grey);
+  font-weight: 600;
+}
+
+.card-cta {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding-top: 1.4rem;
+}
+/* END Prodcuts Section */
