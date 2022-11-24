@@ -11,6 +11,7 @@ html {
   margin: 0;
   padding: 0;
   font-size: 16px;
+  line-height: 1;
 }
 
 a { text-decoration: none; }
@@ -60,6 +61,7 @@ li { list-style: none; }
   display: block;
   position: relative;
   padding-top: 6rem;
+  padding-bottom: 3rem;
   width: 100%;
   height: auto;
 }
@@ -74,6 +76,15 @@ li { list-style: none; }
   text-align: center;
   padding-bottom: 3rem;
 }
+
+.subtitle-two {
+  font-family: var(--lobster-font);
+  font-size: var(--font-md);
+  display: block;
+  text-align: center;
+}
+
+.text-white { color: var(--white-color) }
 
 .btn {
   padding: .8rem 1.8rem;
@@ -185,7 +196,7 @@ li { list-style: none; }
   margin-right: 3rem;
   padding: 2.6rem 4rem;
   background-color: rgba(7 112 179 / .8);
-  border-radius: .8rem;
+  border-radius: .6rem;
 }
 
 .main-content_text {
@@ -205,19 +216,21 @@ li { list-style: none; }
 /* ########## END MAIN common styles ########## */
 
 
-/* Prodcuts Section */
-.card-item {
+/* Products Section */
+.card-item, .orders-option_item {
   width: 33.33%;
-  height: auto;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 2rem;
+  flex-grow: 1;
 }
 
 .card {
   width: 100%;
+  height: 100%;
   border-radius: .6rem;
   box-shadow: 0 2px 5px rgba(37 37 37 / .2);
+  position: relative;
 }
 
 .card-image_container {
@@ -246,6 +259,7 @@ li { list-style: none; }
   height: auto;
   position: relative;
   padding: 1.2rem 2rem;
+  padding-bottom: 6rem;
 }
 
 .card-content_title {
@@ -254,6 +268,11 @@ li { list-style: none; }
   line-height: .8;
   padding-bottom: 1rem;
   font-weight: 400;
+}
+
+.card-content_details {
+  width: 100%;
+  height: inherit;
 }
 
 .card-content_info {
@@ -270,9 +289,59 @@ li { list-style: none; }
 }
 
 .card-cta {
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-  padding-top: 1.4rem;
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
 }
-/* END Prodcuts Section */
+/* END Products Section */
+
+/* Orders Section */
+.orders {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: var(--fourth-color);
+  color: var(--white-color);
+}
+
+.orders-description {
+  font-size: var(--font-md);
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.options-container {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 1.6rem 2rem;
+  padding-top: 3.6rem;
+  background-color: var(--white-color);
+  height: 100%;
+  color: var(--dark-color);
+  border-radius: .6rem;
+  font-size: var(--font-sm);
+}
+
+.options-title {
+  margin-bottom: 1.6rem;
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  background-color: var(--second-color);
+  display: block;
+  transform: translateX(-50%);
+  padding: 1rem 4rem;
+  border-radius: 3rem;
+  color: var(--white-color);
+}
+
+.options-description, .options-info {
+  font-size: var(--font-sm);
+  padding-bottom: 1rem;
+}
+
+.options-info {
+  font-weight: 600;
+}
+/* END Orders Section */
