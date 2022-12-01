@@ -156,17 +156,16 @@
     <div class="flex-container">
       <h2 class="title text-white">¡Deja volar tu creatividad!</h2>
       <p class="orders-description">Porque sabemos que tu paladar es único y especial, te dejamos elegir la combinación de sabores que haran una delicia ese momento especial para compartir con tus seres queridos.</p>
-      <div class="flex-container orders-option_container">
+      <div class="flex-container">
         <div class="orders-option_item">
           <div class="options-container">
             <h4 class="subtitle-two options-title">Sabores</h4>
             <ul>
-              <li class="options-description">Chocolate - <span class="options-info">$200.00</span></li>
-              <li class="options-description">Tres leches - <span class="options-info">$200.00</span></li>
-              <li class="options-description">Vainilla - <span class="options-info">$200.00</span></li>
-              <li class="options-description">Galleta - <span class="options-info">$200.00</span></li>
-              <li class="options-description">Yogurt - <span class="options-info">$200.00</span></li>
-              <li class="options-description">Fresa - <span class="options-info">$200.00</span></li>
+              <li class="options-description">Chocolate <span class="options-info">$200.00</span></li>
+              <li class="options-description">Tres leches <span class="options-info">$200.00</span></li>
+              <li class="options-description">Vainilla <span class="options-info">$200.00</span></li>
+              <li class="options-description">Galleta <span class="options-info">$200.00</span></li>
+              <li class="options-description">Yogurt <span class="options-info">$200.00</span></li>
             </ul>
           </div>
         </div>
@@ -174,10 +173,10 @@
           <div class="options-container">
             <h4 class="subtitle-two options-title">Rellenos</h4>
             <ul>
-              <li class="options-description">Nuez - <span class="options-info">$50.00</span></li>
-              <li class="options-description">Durazno - <span class="options-info">$50.00</span></li>
-              <li class="options-description">Fresa - <span class="options-info">$70.00</span></li>
-              <li class="options-description">Crema pastelera - <span class="options-info">$60.00</span></li>
+              <li class="options-description">Nuez <span class="options-info">$50.00</span></li>
+              <li class="options-description">Durazno <span class="options-info">$50.00</span></li>
+              <li class="options-description">Fresa <span class="options-info">$70.00</span></li>
+              <li class="options-description">Crema pastelera <span class="options-info">$60.00</span></li>
             </ul>
           </div>
         </div>
@@ -185,11 +184,10 @@
           <div class="options-container">
             <h4 class="subtitle-two options-title">Coberturas</h4>
             <ul>
-              <li class="options-description">Fresas - <span class="options-info">$90.00</span></li>
-              <li class="options-description">Mandarinas - <span class="options-info">$80.00</span></li>
-              <li class="options-description">Cacao en polvo - <span class="options-info">$90.00</span></li>
-              <li class="options-description">Chispas de colores - <span class="options-info">$80.00</span></li>
-              <li class="options-description">Trozos de chocolate - <span class="options-info">$70.00</span></li>
+              <li class="options-description">Fresas <span class="options-info">$90.00</span></li>
+              <li class="options-description">Mandarinas <span class="options-info">$80.00</span></li>
+              <li class="options-description">Cacao en polvo <span class="options-info">$90.00</span></li>
+              <li class="options-description">Chispas de colores <span class="options-info">$80.00</span></li>
             </ul>
           </div>
         </div>
@@ -199,109 +197,234 @@
   <!-- END Sección ordenar pasteles -->
   
   <!-- Sección crear pedido-->
-  <section class="section final">
-    <h2>Realiza tu pedido</h2>
-    <form action="">
+  <section class="section checkout">
+    <h2 class="title">Realiza tu pedido</h2>
+    <div class="flex-container">
+      <form action="" class="checkout-form">
+        <!-- Selección de un pastel de la casa -->
+        <div class="checkout-order x-end">
+          <h3 class="subtitle-one choices-title full">Elige el pastel que más te guste</h3>
+          <div class="checkout-order_select">
+            <label for="checkout-select" class="checkout-title">Selecciona tu pastel favorito: </label>
+            <select name="checkout" id="checkout-select" class="checkout-select">
+              <option value="empty"></option>
+              <option value="chocoStraw">Chocolate con fresas</option>
+              <option value="chocoTang">Tres leches con mandarinas</option>
+              <option value="vanillaStraw">Vainilla con fresas</option>
+              <option value="cokieCacao">innovaCake Galleta con cacao</option>
+              <option value="yogurtColors">innovaCake Yogurt con chispas de colores</option>
+              <option value="strawdoubleChoco">innovaCake Fresa doble chocolate</option>
+            </select>
+          </div>
+          <div class="checkout-order_total">
+            <label for="choiceQty" class="checkout-title">Cantidad: </label>
+            <input type="number" id="chocoStrawQty" class="checkout-number">
+          </div>
+          <div class="checkout-order_amount">
+            <p class="checkout-title">Subtotal:</p>
+            <span class="checkout-amount" id="checkout-amount">$000.00</span>
+          </div>
+          <div class="checkout-order_add">
+            <button class="btn main-btn" disabled>Añadir</button>
+          </div>
+          <!-- <span class="checkout-add_order">+ Agregar otro pastel</span> -->
+        </div>
+        <!-- END - Selección de un pastel especial -->
 
-      <!-- Selección de un pastel especial -->
-      <div class="special-choices_order">
-        <h3 class="special-choices_order-title">Elige alguna de nuestras especialidades:</h3>
-        <select name="special-choices" id="special-choices" class="special-choices_container">
-          <option value="empty"></option>
-          <option value="chocoStraw">Pastel de chocolate con fresas</option>
-          <option value="chocoTang">Pastel de chocolate con mandarinas</option>
-          <option value="vanillaStraw">Pastel de vainilla con fresas</option>
-          <option value="cokieCacao">Pastel innovaCake galleta con cacao</option>
-          <option value="yogurtColors">Pastel innovaCake yogurt con chispas de colores</option>
-          <option value="strawdoubleChoco">Pastel innovaCake fresa doble chocolate</option>
-        </select>
-        <label for="choiceQty">| Cantidad: </label>
-        <input type="number" id="chocoStrawQty">
-      </div>
-      <p>Subtotal: <span id="choice-cost">$000.00</span></p>
-      <span><a href="#">Agregar otro pastel</a></span><br>
-      <!-- END - Selección de un pastel especial -->
+        <!-- Selección de un pastel combinado por cliente -->
+        <div class="checkout-choices">
+          <div class="flex-container">
+            <h3 class="subtitle-one choices-title full">Crea tu propia versión</h3>
+            <div class="md-33 choices-list">
+              <h4 class="choices-subtitle">Elige el sabor</h4>
+              <div class="choices-content" id="choices-flavor">
+                <div class="choices-content_data">
+                  <div class="choices-content_data-checkbox">
+                    <input type="checkbox" id="choco" name="choco" value="choco">
+                  </div>
+                  <div class="choices-content_data-info">
+                    <label class="choices-label" for="choco">Chocolate<span class="choices-content_data-amount">$200.00</span></label>
+                  </div>
+                </div>
+                <div class="choices-content_data">
+                  <div class="choices-content_data-checkbox">
+                    <input type="checkbox" id="tres-leches" name="tres-leches" value="tres-leches">
+                  </div>
+                  <div class="choices-content_data-info">
+                    <label class="choices-label" for="tres-leches">Tres leches<span class="choices-content_data-amount">$200.00</span></label>
+                  </div>
+                </div>
+                <div class="choices-content_data">
+                  <div class="choices-content_data-checkbox">
+                    <input type="checkbox" id="vanilla" name="vanilla" value="vanilla">
+                  </div>
+                  <div class="choices-content_data-info">
+                    <label class="choices-label" for="vanilla">Vainilla<span class="choices-content_data-amount">$200.00</span></label>
+                  </div>
+                </div>
+                <div class="choices-content_data">
+                  <div class="choices-content_data-checkbox">
+                    <input type="checkbox" id="cookie" name="cookie" value="cookie">
+                  </div>
+                  <div class="choices-content_data-info">
+                    <label class="choices-label" for="cookie">Galleta<span class="choices-content_data-amount">$200.00</span></label>
+                  </div>
+                </div>
+                <div class="choices-content_data">
+                  <div class="choices-content_data-checkbox">
+                    <input type="checkbox" id="strawberry" name="strawberry" value="strawberry">
+                  </div>
+                  <div class="choices-content_data-info">
+                    <label class="choices-label" for="strawberry">Yogurt<span class="choices-content_data-amount">$200.00</span></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="md-33 choices-list">
+              <h4 class="choices-subtitle">Elige el relleno</h4>
+              <div class="choices-content" id="choices-middle">
+                <div class="choices-content_data">
+                  <div class="choices-content_data-checkbox">
+                    <input type="checkbox" id="nuts" name="nuts" value="nuts">
+                  </div>
+                  <div class="choices-content_data-info">
+                    <label class="choices-label" for="nuts">Nuez<span class="choices-content_data-amount">$50.00</span></label>
+                  </div>
+                </div>
+                <div class="choices-content_data">
+                  <div class="choices-content_data-checkbox">
+                    <input type="checkbox" id="peachs" name="peachs" value="peachs">
+                  </div>
+                  <div class="choices-content_data-info">
+                    <label class="choices-label" for="peachs">Durazno<span class="choices-content_data-amount">$50.00</span></label>
+                  </div>
+                </div>
+                <div class="choices-content_data">
+                  <div class="choices-content_data-checkbox">
+                    <input type="checkbox" id="straw-user" name="straw-user" value="straw-user">
+                  </div>
+                  <div class="choices-content_data-info">
+                    <label class="choices-label" for="straw-user">Fresa<span class="choices-content_data-amount">$70.00</span></label>
+                  </div>
+                </div>
+                <div class="choices-content_data">
+                  <div class="choices-content_data-checkbox">
+                    <input type="checkbox" id="cream" name="cream" value="cream">
+                  </div>
+                  <div class="choices-content_data-info">
+                    <label class="choices-label" for="cream">Crema pastelera<span class="choices-content_data-amount">$60.00</span></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="md-33 choices-list">
+              <h4 class="choices-subtitle">Elige la decoración</h4>
+              <div class="choices-content" id="choices-deco">
+                <div class="choices-content_data">
+                  <div class="choices-content_data-checkbox">
+                    <input type="checkbox" id="strawberries" name="strawberries" value="strawberries">
+                  </div>
+                  <div class="choices-content_data-info">
+                    <label class="choices-label" for="strawberries">Fresas<span class="choices-content_data-amount">$90.00</span></label>
+                  </div>
+                </div>
+                <div class="choices-content_data">
+                  <div class="choices-content_data-checkbox">
+                    <input type="checkbox" id="tangerines" name="tangerines" value="tangerines">
+                  </div>
+                  <div class="choices-content_data-info">
+                    <label class="choices-label" for="tangerines">Mandarinas<span class="choices-content_data-amount">$80.00</span></label>
+                  </div>
+                </div>
+                <div class="choices-content_data">
+                  <div class="choices-content_data-checkbox">
+                    <input type="checkbox" id="cacao" name="cacao" value="cacao">
+                  </div>
+                  <div class="choices-content_data-info">
+                    <label class="choices-label" for="cacao">Cacao en polvo<span class="choices-content_data-amount">$90.00</span></label>
+                  </div>
+                </div>
+                <div class="choices-content_data">
+                  <div class="choices-content_data-checkbox">
+                    <input type="checkbox" id="colors" name="colors" value="colors">
+                  </div>
+                  <div class="choices-content_data-info">
+                    <label class="choices-label" for="colors">Chispas de colores<span class="choices-content_data-amount">$80.00</span></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="choices-list_add">
+              <button class="btn main-btn" disabled>Añadir</button>
+            </div>
+          </div>
+        </div>
+        <!-- END - Selección de un pastel combinado por cliente -->
+  
+        <!-- Detalle del pedido del cliente -->
+        <div class="user-order_details">
+          <h3 class="subtitle-one order-title">El detalle de tu pedido es el siguiente:</h3>
+          <table class="order-table">
+            <tbody>
+              <tr class="table-row">
+                <th class="md-40 table-h">Pastel</th>
+                <th class="md-15 table-h">Precio</th>
+                <th class="md-10 table-h">Pzs</th>
+                <th class="md-15 table-h">Subtotal</th>
+                <th class="md-20"></th>
+              </tr>
+              <tr class="table-row">
+                <td class="md-40 table-data">Nombre del pastel 1</td>
+                <td class="md-15 table-data">$350.00</td>
+                <td class="md-10 table-data">1</td>
+                <td class="md-15 table-data">$350.00</td>
+                <td class="md-20 table-data">
+                  <button disabled="disabled" class="delete-item">Quitar</button>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="md-40 table-data">Nombre del pastel 2</td>
+                <td class="md-15 table-data">$250.00</td>
+                <td class="md-10 table-data">2</td>
+                <td class="md-15 table-data">$500.00</td>
+                <td class="md-20 table-data">
+                  <button disabled="disabled" class="delete-item">Quitar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="order-details flex-container full">
+            <p class="md-50 order-data">Cantidad de productos: <span class="order-data_info">2</span></p>
+            <p class="md-50 order-data">Total a pagar: <span class="order-data_info">$850.00</span></p>
+          </div>
+        </div>
+        <!-- END - Detalle del pedido del cliente -->
+  
+        <!-- Infromación del cliente para envío del pedido -->
+        <div class="user-delivery_info">
+          <h3 class="subtitle-one delivery-title">Por favor ingresa tus datos para confirmar la orden</h3>
+          <div class=" flex-container md-50 flex-x-center flex-column delivery-data_container">
+            <div class="delivery-data">
+              <label for="user_name">Nombre:</label>
+              <input type="text" name="user_name" id="user_name">
+            </div>
+            <div class="delivery-data">
+              <label for="user_phone">Teléfono:</label>
+              <input type="tel" name="user_phone" id="user_phone">
+            </div>
+            <div class="delivery-data">
+              <label for="user_mail">Correo electrónico:</label>
+              <input type="email" name="user_mail" id="user_mail">
+            </div>
+          </div>
+        </div>
+        <!-- END - Infromación del cliente para envío del pedido -->
+        <div class="request-order">
+          <button disabled type="submit" class="btn main-btn">Realizar pedido</button>
+        </div>
+      </form>
 
-      <!-- Selección de un pastel combinado por cliente -->
-      <div class="user-choices_order">
-        <h3 class="user-choices_title">Crea la versión más deliciosa de tu propio pastel</h3>
-        <p>Selecciona el tipo de cobertura/decoración <span>"Recuerda que puedes combinarlos"</span></p>
-        <input type="checkbox" id="choco" name="choco" value="choco">
-        <label for="choco">Chocolate - <span>$250.00</span></label>
-        <br>
-        <input type="checkbox" id="vanilla" name="vanilla" value="vanilla">
-        <label for="vanilla">Vainilla - <span>$200.00</span></label>
-        <br>
-        <input type="checkbox" id="cookie" name="cookie" value="cookie">
-        <label for="cookie">Galleta - <span>$250</span></label>
-        <br>
-        <input type="checkbox" id="yogurt" name="yogurt" value="yogurt">
-        <label for="yogurt">Yogurt - <span>$230.00</span></label>
-        <br>
-        <input type="checkbox" id="strawberry" name="strawberry" value="strawberry">
-        <label for="strawberry">Fresa - <span>$250.00</span></label>
-        <h4>Selecciona el tipo de cobertura/decoración <span>"Recuerda que puedes combinarlos"</span></h4>
-        <input type="checkbox" id="strawberries" name="strawberries" value="strawberries">
-        <label for="strawberries">Fresas - <span>$100.00</span></label>
-        <br>
-        <input type="checkbox" id="tangerines" name="tangerines" value="tangerines">
-        <label for="tangerines">Gajos de mandarina - <span>$50.00</span></label>
-        <br>
-        <input type="checkbox" id="cacao" name="cacao" value="cacao">
-        <label for="cacao">Cacao en polvo - <span>$100.00</span></label>
-        <br>
-        <input type="checkbox" id="colors" name="colors" value="colors">
-        <label for="colors">Chispas de colores - <span>$70.00</span></label>
-        <br>
-        <input type="checkbox" id="choco-nibs" name="choco-nibs" value="choco-nibs">
-        <label for="choco-nibs">Trozos de chocolate - <span>$100.00</span></label>
-      </div>
-      <!-- END - Selección de un pastel combinado por cliente -->
-
-      <!-- Detalle del pedido del cliente -->
-      <div class="user-order_details">
-        <h3>El detalle de tu pedido es el siguiente:</h3>
-        <p><i>Pasteles de la casa:</i></p>
-        <table>
-          <tr>
-            <th>Especialidad</th><th>Precio</th><th>Cantidad</th><th>Subtotal</th>
-          </tr>
-          <tr>
-            <td>Nombre del pastel 1</td><td>$350.00</td><td>1</td><td>$350.00</td>
-          </tr>
-          <tr>
-            <td>Nombre del pastel 2</td><td>$250.00</td><td>2</td><td>$500.00</td>
-          </tr>
-        </table>
-        <p><i>Pasteles con tu toque:</i></p>
-        <table>
-          <tr>
-            <th>Combinado</th><th>Precio</th><th>Cantidad</th><th>Subtotal</th>
-          </tr>
-          <tr>
-            <td>Nombre combinación 1</td><td>$350.00</td><td>1</td><td>$350.00</td>
-          </tr>
-        </table>
-        <p>Cantidad de productos: <span>4</span></p>
-        <p>Total a pagar: <span>$950.00</span></p>
-      </div>
-      <!-- END - Detalle del pedido del cliente -->
-
-      <!-- Infromación del cliente para envío del pedido -->
-      <div class="user_delivery-info">
-        <h3>Por favor ingresa tus datos para confirmar la orden</h3>
-        <label for="user_name">Nombre</label>
-        <input type="text" name="user_name" id="user_name">
-        <label for="user_phone">Teléfono</label>
-        <input type="tel" name="user_phone" id="user_phone">
-        <label for="user_mail">Correo electrónico</label>
-        <input type="email" name="user_mail" id="user_mail">
-      </div>
-      <!-- END - Infromación del cliente para envío del pedido -->
-
-      <br>
-      <button type="submit">Realizar pedido</button>
-    </form>
+    </div>
   </section>
   <!-- END - Sección crear pedido-->
   <br><br><br>
